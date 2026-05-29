@@ -43,17 +43,19 @@
 
     <!-- Hero Section with Absolute Blended Background and Fog Overlays -->
     <section class="hero" id="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h1 class="hero-tagline">
-                    Pure Extracts,<br>
-                    <span>Global Impact.</span>
-                </h1>
-                <p class="hero-description">
-                    Synthesizing Indonesia's rich agricultural biodiversity into premium botanical concentrates with zero environmental trace.
-                </p>
-                <div class="hero-ctas">
-                    <a href="#ecosystem" class="btn btn-ecosystem">Our Ecosystem</a>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-tagline">
+                        Pure Extracts,<br>
+                        <span>Global Impact.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Synthesizing Indonesia's rich agricultural biodiversity into premium botanical concentrates with zero environmental trace.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#ecosystem" class="btn btn-ecosystem">Our Ecosystem</a>
+                    </div>
                 </div>
             </div>
         </div>
