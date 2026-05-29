@@ -40,13 +40,13 @@
                         @endif
                     @endauth
                 @else
-                    <a href="#" class="btn btn-secondary">
-                        <span class="btn-text-full">Client Login</span>
-                        <span class="btn-text-mobile">Login</span>
+                    <a href="#get-started" class="btn btn-secondary">
+                        <span class="btn-text-full">Contact Us</span>
+                        <span class="btn-text-mobile">Contact</span>
                     </a>
-                    <a href="#" class="btn btn-primary">
-                        <span class="btn-text-full">Enterprise SSO</span>
-                        <span class="btn-text-mobile">SSO</span>
+                    <a href="#get-started" class="btn btn-primary">
+                        <span class="btn-text-full">Get Started</span>
+                        <span class="btn-text-mobile">Start</span>
                     </a>
                 @endif
             </div>
