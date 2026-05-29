@@ -64,6 +64,7 @@ header {
     align-items: center;
     gap: 0.6rem;
     text-decoration: none;
+    white-space: nowrap; /* Enforce logo to stay on a single line */
 }
 
 .logo-icon {
@@ -78,6 +79,7 @@ header {
     font-weight: 800;
     font-family: var(--font-heading);
     box-shadow: 0 4px 10px rgba(45, 90, 39, 0.1);
+    transition: var(--transition-smooth);
 }
 
 .logo-text {
@@ -86,6 +88,7 @@ header {
     font-weight: 800;
     color: var(--color-primary);
     letter-spacing: -0.03em;
+    transition: var(--transition-smooth);
 }
 
 .logo-text span {
@@ -117,6 +120,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    transition: var(--transition-smooth);
 }
 
 .btn {
@@ -192,6 +196,7 @@ nav ul li a:hover {
     grid-template-columns: 1.15fr 0.85fr; /* Restored perfect desktop grid proportion */
     gap: 4rem;
     align-items: center;
+    width: 100%;
 }
 
 .hero-content {
@@ -481,7 +486,7 @@ footer {
     }
     
     .features {
-        margin-top: 2rem;
+        margin-top: -5rem; /* Smoothed out negative margin shift to prevent overlaps */
         padding: 4rem 0;
     }
     
@@ -498,17 +503,43 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem 0;
+        padding: 0.85rem 0; /* Slightly tighter header spacing */
     }
     
     nav {
         display: none;
+    }
+
+    /* Prevent logo wrapping on mobile screens and keep buttons neat */
+    .logo-text {
+        font-size: 1.15rem; /* Scaled down beautifully for mobile line budget */
+    }
+
+    .logo-icon {
+        width: 1.85rem;
+        height: 1.85rem;
+        border-radius: 0.35rem;
+        font-size: 0.95rem;
+    }
+
+    .auth-buttons {
+        gap: 0.45rem; /* Tighter button gap */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Compact button sizes */
+        font-size: 0.8rem;
     }
     
     /* Maximize text room on small devices while maintaining background visibility */
     .hero-grid {
         grid-template-columns: 1.7fr 0.3fr; /* 85% text space, 15% window */
         gap: 1rem;
+    }
+
+    .features {
+        margin-top: -3.5rem; /* Perfect spacing on small mobile viewports */
+        padding: 3rem 0;
     }
 
     .footer-grid {
