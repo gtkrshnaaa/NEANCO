@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --color-primary: #0f3d2a;
-    --color-primary-light: #165b43;
-    --color-secondary: #d1ebd9;
-    --color-accent: #27ae60;
-    --color-dark: #11291f;
+    /* Highly tailored tree-leaf organic color palette */
+    --color-primary: #0a3622;         /* Deep Chlorophyll / Leaf shade */
+    --color-primary-light: #125435;   /* Mid Leaf Green */
+    --color-secondary: #cdecd2;       /* Fresh Leaf Sprout background */
+    --color-accent: #2dc653;          /* Vibrant Sunlit Leaf Green */
+    --color-dark: #072215;            /* Dark leaf vein / forest floor */
     --color-light: #ffffff;
-    --color-gray: #4d5d53;
-    --color-glass-border: rgba(11, 61, 44, 0.05);
+    --color-gray: #3b4d43;            /* Warm Leaf Olive-Gray for description */
+    --color-glass-border: rgba(10, 54, 34, 0.05);
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -74,7 +75,7 @@ header {
     color: white;
     font-weight: 800;
     font-family: var(--font-heading);
-    box-shadow: 0 4px 12px rgba(11, 61, 44, 0.15);
+    box-shadow: 0 4px 12px rgba(10, 54, 34, 0.15);
 }
 
 .logo-text {
@@ -128,15 +129,15 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Donate Button Style (Soft Green) */
+/* Donate Button Style (Soft Leaf Green Sprout) */
 .btn-secondary {
-    background-color: #dcf5e7;
+    background-color: #d8f3dc;
     color: var(--color-primary);
     border: none;
 }
 
 .btn-secondary:hover {
-    background-color: #c5edd4;
+    background-color: #b7e4c7;
     transform: translateY(-2px);
 }
 
@@ -154,9 +155,9 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* Ecosystem Hero Button */
+/* Ecosystem Hero Button - Sunlit Leaf Green */
 .btn-ecosystem {
-    background-color: #d8edd9;
+    background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: 0.9rem 2.4rem;
     font-size: 1.1rem;
@@ -167,7 +168,7 @@ nav ul li a:hover {
 }
 
 .btn-ecosystem:hover {
-    background-color: #c2e2c4;
+    background-color: #b2dfb9;
     transform: translateY(-2px);
 }
 
@@ -196,7 +197,7 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-/* Massive Typography matching mockup exactly */
+/* Massive Leaf Organic Typography */
 .hero-tagline {
     font-family: var(--font-heading);
     font-size: clamp(3.8rem, 6.5vw, 6.4rem);
@@ -204,20 +205,20 @@ nav ul li a:hover {
     line-height: 1.02;
     color: var(--color-primary);
     margin-bottom: 2rem;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.045em; /* Highly customized tight letter-spacing for premium feel */
 }
 
 .hero-tagline span {
-    color: #1a6b47;
+    color: var(--color-accent); /* Sunlit leaf highlight */
 }
 
 .hero-description {
     font-size: 1.25rem;
-    color: var(--color-gray);
+    color: var(--color-gray); /* Olive leaf gray */
     margin-bottom: 2.75rem;
-    font-weight: 400;
+    font-weight: 450;
     max-width: 85%;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .hero-ctas {
@@ -225,11 +226,7 @@ nav ul li a:hover {
     gap: 1.25rem;
 }
 
-/* 
-   Expanded image container to 75% width.
-   This allows the beautiful sky background to bleed all the way 
-   behind the tagline and text while the island stays right-aligned.
-*/
+/* Full-bleed absolute background layout matching mockup */
 .hero-background-image-container {
     position: absolute;
     top: 0;
@@ -315,35 +312,35 @@ nav ul li a:hover {
 .feature-card-blue {
     background: rgba(243, 249, 253, 0.82);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 15px 35px rgba(15, 61, 42, 0.03);
+    box-shadow: 0 15px 35px rgba(10, 54, 34, 0.03);
 }
 
 /* Card 2: Soft Green-ish Translucent Glass */
 .feature-card-green {
     background: rgba(244, 253, 247, 0.82);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 15px 35px rgba(15, 61, 42, 0.03);
+    box-shadow: 0 15px 35px rgba(10, 54, 34, 0.03);
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(15, 61, 42, 0.08);
+    box-shadow: 0 25px 50px rgba(10, 54, 34, 0.08);
     background-color: rgba(255, 255, 255, 0.95);
     border-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Rounded-rect Squircle dark container for icons */
+/* Rounded-rect Squircle dark container for icons - Deep Chlorophyll */
 .feature-image-wrapper {
     width: 5rem;
     height: 4rem;
-    background: #11291f;
+    background: var(--color-primary);
     border-radius: 1.25rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: 0 6px 18px rgba(17, 41, 31, 0.15);
+    box-shadow: 0 6px 18px rgba(10, 54, 34, 0.15);
     transition: var(--transition-smooth);
 }
 
