@@ -157,17 +157,18 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* Ecosystem Hero Button - Massive Bolder Matcha CTA matching 'Our Approach' exactly */
+/* Ecosystem Hero Button - Fluidly-scaled Matcha CTA */
 .btn-ecosystem {
     background-color: #ceddb0; /* Flat Soft Matcha */
     color: var(--color-primary);
-    padding: 1.15rem 2.8rem; /* Upgraded padding for massive presence */
-    font-size: 1.25rem; /* Upgraded font size */
+    padding: clamp(0.75rem, 1.5vw, 1.15rem) clamp(1.8rem, 3.5vw, 2.8rem); /* Fluid responsive padding */
+    font-size: clamp(0.95rem, 1.6vw, 1.25rem); /* Fluid responsive font-size */
     border-radius: 2rem;
     font-family: var(--font-heading);
     font-weight: 700; /* Extra bold */
     border: none;
     box-shadow: 0 4px 14px rgba(45, 90, 39, 0.08);
+    transition: var(--transition-smooth);
 }
 
 .btn-ecosystem:hover {
@@ -186,11 +187,13 @@ nav ul li a:hover {
     padding: 6rem 0 11rem 0;
 }
 
+/* Fixed side-by-side grid structure with responsive gap scaling */
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr; /* Adjusted column ratio to support massive text */
-    gap: 4rem;
+    grid-template-columns: 1.2fr 0.8fr; /* Strictly preserved side-by-side columns */
+    gap: clamp(1rem, 4vw, 4rem); /* Responsive fluid scaling gap */
     align-items: center;
+    width: 100%;
 }
 
 .hero-content {
@@ -201,26 +204,26 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-/* Giant, Ultra-Bold Brutalist Tagline matching mockup exactly */
+/* Giant Tagline scaling continuously via fluid typography clamp */
 .hero-tagline {
     font-family: var(--font-heading);
-    font-size: clamp(4.8rem, 8.5vw, 6.8rem); /* Massive giant sizing */
-    font-weight: 900; /* Ultra-bold / Black weight for maximum impact */
-    line-height: 0.92; /* Super tight brutalist line height */
-    color: var(--color-primary); /* Uniform solid deep matcha green */
-    margin-bottom: 2.2rem;
-    letter-spacing: -0.045em; /* Extremely tight kerning */
+    font-size: clamp(2.2rem, 8.5vw, 6.8rem); /* Expanded fluid clamp scale down to mobile */
+    font-weight: 900;
+    line-height: 0.92;
+    color: var(--color-primary);
+    margin-bottom: clamp(1.2rem, 3vw, 2.2rem);
+    letter-spacing: -0.045em;
 }
 
 .hero-tagline span {
     color: var(--color-primary);
 }
 
-/* Enlarged Description Sizing */
+/* Fluid Responsive Description */
 .hero-description {
-    font-size: 1.45rem; /* Giant highly readable paragraph font size */
+    font-size: clamp(0.95rem, 1.8vw, 1.45rem); /* Proportional fluid scaling */
     color: var(--color-gray);
-    margin-bottom: 3.2rem;
+    margin-bottom: clamp(1.8rem, 4vw, 3.2rem);
     font-weight: 500;
     max-width: 90%;
     line-height: 1.55;
@@ -231,19 +234,18 @@ nav ul li a:hover {
     gap: 1.25rem;
 }
 
-/* Full-bleed absolute background layout matching mockup */
+/* Strictly absolute backdrop overlay preserved on all viewports */
 .hero-background-image-container {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75%; /* Expanded to bleed behind text */
+    width: 75%; /* Bleeds behind left text */
     height: 100%;
     z-index: 1;
     overflow: hidden;
     pointer-events: none;
 }
 
-/* Reverted to standard, non-zoomed display */
 .hero-bg-image {
     width: 100%;
     height: 100%;
@@ -251,22 +253,18 @@ nav ul li a:hover {
     object-position: left center;
 }
 
-/* 
-   Soft Fog / Mist Overlays: 
-   Thinned out significantly with a wide transition from 20% solid white 
-   to completely transparent, letting the light blue sky act as text background.
-*/
+/* Soft Fog / Mist Overlays preserved on all viewports */
 .hero-mist-overlay-left {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%; /* Gentle wide transition */
+    width: 60%;
     height: 100%;
     background: linear-gradient(90deg, 
         #ffffff 0%, 
-        #ffffff 20%, /* Solid white at far left margin */
+        #ffffff 20%,
         rgba(255, 255, 255, 0.7) 45%, 
-        rgba(255, 255, 255, 0) 100% /* Blends completely into sky */
+        rgba(255, 255, 255, 0) 100%
     );
     z-index: 2;
 }
@@ -473,37 +471,7 @@ footer {
         min-height: auto;
     }
     
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-    
-    .hero-content {
-        align-items: center;
-    }
-    
-    .hero-tagline {
-        font-size: 3.8rem;
-    }
-    
-    .hero-description {
-        max-width: 100%;
-    }
-    
-    .hero-background-image-container {
-        position: relative;
-        width: 100%;
-        height: 380px;
-        margin-top: 2rem;
-        right: auto;
-    }
-    
-    .hero-mist-overlay-left {
-        background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-        width: 100%;
-        height: 45%;
-    }
+    /* Removed the collapsing of hero-grid and container overlays to preserve side-by-side alignment */
     
     .features {
         margin-top: 2rem;
