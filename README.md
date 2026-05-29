@@ -65,7 +65,7 @@ graph TD
     Factory["[Upstream]<br>Nusantara Extract Factory<br>• Raw Material Ingestion<br>• Yield & Shrinkage Math"]
     Logistics["[Midstream]<br>Nusantara Logistics & Fleet<br>• Multi-Warehouse Hubs<br>• FEFO Inventory Control<br>• B2B Order Fulfillment"]
     Commerce["[Downstream]<br>Nusantara Bio-Commerce<br>• Brand Coffee Portal<br>• Brand Wellness Portal"]
-    RetailSales["Outputs: Retail Sales<br>• Xendit Payments<br>• WhatsApp Notifications"]
+    RetailSales["Outputs: Retail Sales<br>• Manual Bank Transfer<br>• Manual Order Verification"]
 
     Parent -- "API Telemetry" --> Factory
     Parent -- "API Telemetry" --> Logistics
@@ -155,18 +155,18 @@ nusantara-group-ecosystem/              # Root Development Workspace
     │   │   ├── css/                    # Earthy, dark luxury aesthetic CSS modules
     │   │   └── js/                     # Raw vanilla AJAX cart operations
     │   └── routes/
-    │       ├── api.php                 # Webhooks processing (Xendit incoming)
-    │       └── web.php                 # Customer catalog and checkout flows
+    │       ├── api.php                 # Internal API endpoints
+    │       └── web.php                 # Customer catalog, checkout, and manual transfer receipt upload flows
     │
     └── brand-wellness/                 # [LARAVEL 4B] Consumer Facing Essential Oil App
         ├── app/                        # Medical-grade procurement handlers
         ├── database/                   # Migrations for db_commerce_wellness
         ├── public/
         │   ├── css/                    # Clean, minimal clinical aesthetic CSS modules
-        │   └── js/                     # Modular payment handlers
+        │   └── js/                     # Receipt upload and UI interactions
         └── routes/
             ├── api.php                 # Telemetry interfaces
-            └── web.php                 # Clinical product indexes
+            └── web.php                 # Clinical product catalog and receipt upload flows
 
 ```
 
@@ -174,7 +174,7 @@ nusantara-group-ecosystem/              # Root Development Workspace
 
 ## 5. Technical Flow
 
-The interactions across the Nusantara Extract & Co. network are managed through decoupled, secure API calls. Because the system runs without heavy JavaScript frameworks or external microservice event buses, the applications communicate via secure synchronous REST APIs and asynchronous webhooks using Laravel’s native HTTP Client.
+The interactions across the Nusantara Extract & Co. network are managed through decoupled, secure API calls. Because the system runs without heavy JavaScript frameworks or external microservice event buses, the applications communicate via secure synchronous and asynchronous REST APIs using Laravel’s native HTTP Client.
 
 ### 5.1 Multi-Level API Communication Topography
 
@@ -240,7 +240,7 @@ When an extraction run completes at the factory, the inventory must instantly po
 
 When a customer purchases an essential oil bottle via the `brand-wellness` public storefront, the transaction must execute synchronous cross-app inventory verification.
 
-1. The consumer completes checkout via the web interface on `brand-wellness` (Port 49555) using a simulated **Xendit Payment Gateway** webhook.
+1. The consumer completes checkout on the web interface of `brand-wellness` (Port 49555) by initiating a manual bank transfer request and uploading a valid payment transfer receipt.
 2. `brand-wellness` instantly triggers a background HTTP request to `child-logistics` (Port 49333) to claim the physical inventory.
 3. The `child-logistics` engine searches the local multi-warehouse database. It executes a FEFO query:
 
@@ -258,7 +258,7 @@ $$\text{SELECT } \text{batch\_id} \text{ FROM } \text{inventory} \text{ WHERE } 
 
 ```
 
-5. `brand-wellness` captures this tracking data, triggers a local database write to mark the order as processed, and communicates the confirmation to the customer.
+5. `brand-wellness` captures this tracking data, triggers a local database write to log the booking under 'Pending Verification' (awaiting manual receipt verification by administrators), and displays the transaction details and instructions to the customer.
 
 ---
 
