@@ -510,6 +510,207 @@ footer {
     font-size: 0.85rem;
 }
 
+/* Corporate Holding Bento Extensions */
+.corp-bento-section {
+    padding: 6.5rem 0;
+    background-color: #ffffff;
+}
+
+.corp-bento-title-group {
+    margin-bottom: 3.5rem;
+    text-align: left;
+}
+
+.corp-bento-tag {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
+
+.corp-bento-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-primary);
+    letter-spacing: -0.03em;
+}
+
+/* 3-Column Division Bento Grid */
+.corp-divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.corp-division-card {
+    background: rgba(242, 250, 244, 0.6); /* Premium matching flat organic cream-matcha glassmorphism */
+    border: 1px solid rgba(45, 90, 39, 0.08);
+    border-radius: 1.75rem;
+    padding: 3rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: var(--transition-smooth);
+}
+
+.corp-division-card:hover {
+    background: rgba(242, 250, 244, 0.85);
+    border-color: rgba(45, 90, 39, 0.18);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(45, 90, 39, 0.03);
+}
+
+.corp-card-tag {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    padding: 0.35rem 0.85rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.corp-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.95rem;
+    letter-spacing: -0.02em;
+}
+
+.corp-card-desc {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+    line-height: 1.65;
+}
+
+/* 4-Column Operational Stats Bento Grid */
+.corp-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+    margin-bottom: 4.5rem;
+}
+
+.corp-stat-card {
+    background: #ffffff;
+    border: 1px solid rgba(45, 90, 39, 0.08);
+    border-radius: 1.5rem;
+    padding: 2.2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 8px 24px rgba(45, 90, 39, 0.01);
+    transition: var(--transition-smooth);
+}
+
+.corp-stat-card:hover {
+    border-color: rgba(45, 90, 39, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(45, 90, 39, 0.03);
+}
+
+.corp-stat-num {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.corp-stat-label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+}
+
+.corp-stat-desc {
+    font-size: 0.88rem;
+    color: rgba(77, 93, 78, 0.8);
+    line-height: 1.5;
+}
+
+/* Wide Sustainability Bento Card */
+.corp-wide-card {
+    background: rgba(242, 250, 244, 0.6);
+    border: 1px solid rgba(45, 90, 39, 0.08);
+    border-radius: 1.75rem;
+    padding: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5rem;
+    transition: var(--transition-smooth);
+}
+
+.corp-wide-card:hover {
+    background: rgba(242, 250, 244, 0.85);
+    border-color: rgba(45, 90, 39, 0.18);
+}
+
+.corp-wide-info {
+    max-width: 60%;
+}
+
+.corp-wide-title {
+    font-family: var(--font-heading);
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.025em;
+}
+
+.corp-wide-desc {
+    font-size: 0.98rem;
+    color: var(--color-gray);
+    line-height: 1.65;
+}
+
+.corp-wide-pillars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    min-width: 320px;
+}
+
+.corp-pillar-item {
+    background-color: #ffffff;
+    border: 1px solid rgba(45, 90, 39, 0.08);
+    padding: 1rem 1.4rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(45, 90, 39, 0.01);
+}
+
+.corp-pillar-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.corp-pillar-desc {
+    font-size: 0.76rem;
+    color: var(--color-gray);
+    line-height: 1.4;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .hero {
@@ -541,6 +742,33 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
+    }
+
+    /* Corporate Bento Extensions Tablet Shifts */
+    .corp-divisions-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .corp-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .corp-wide-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    .corp-wide-info {
+        max-width: 100%;
+    }
+
+    .corp-wide-pillars {
+        width: 100%;
+        min-width: auto;
     }
 }
 
