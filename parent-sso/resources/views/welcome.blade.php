@@ -119,116 +119,113 @@
     </section>
 
 
-    <!-- Holding Conglomerate Enterprise Bento Sections -->
+    <!-- Commercial Brand Showcase Sections -->
     <section class="corp-bento-section">
         <div class="container">
             
-            <!-- Section 1: Our Corporate Ecosystem (Integrated Value Chain) -->
-            <div class="corp-bento-title-group" id="corporate-value-chain">
-                <span class="corp-bento-tag">Ecosystem Synergy</span>
-                <h2 class="corp-bento-title">Integrated Value Chain</h2>
+            <!-- Section 1: Our Premium Brands -->
+            <div class="corp-bento-title-group" id="our-brands">
+                <span class="corp-bento-tag">Our Brands</span>
+                <h2 class="corp-bento-title">Crafted for Those Who<br>Demand the Finest</h2>
             </div>
             
             <div class="corp-divisions-grid">
-                <!-- Upstream Division -->
+                <!-- Brand: Nusantara Coffee -->
                 <div class="corp-division-card">
-                    <span class="corp-card-tag">Upstream Manufacturing</span>
-                    <h3 class="corp-card-title">Nusantara Extract Factory</h3>
+                    <span class="corp-card-tag">Premium Single-Origin</span>
+                    <h3 class="corp-card-title">Nusantara Coffee</h3>
                     <p class="corp-card-desc">
-                        Coordinating high-yield raw material procurement directly from sustainable farming cooperatives. Specializing in advanced biological asset extraction, mass-volume balance processing, and green solvent botanical distillation.
+                        Experience the richness of Indonesian highlands in every cup. Our single-origin beans are hand-selected from volcanic soils across Sumatra, Java, and Sulawesi, then carefully roasted to preserve their complex, earthy character.
                     </p>
                 </div>
                 
-                <!-- Midstream Division -->
+                <!-- Brand: Atsiri Wellness -->
                 <div class="corp-division-card">
-                    <span class="corp-card-tag">Midstream Distribution</span>
-                    <h3 class="corp-card-title">Nusantara Logistics & Fleet</h3>
+                    <span class="corp-card-tag">Clinical Botanical</span>
+                    <h3 class="corp-card-title">Atsiri Wellness</h3>
                     <p class="corp-card-desc">
-                        Orchestrating smart multi-warehouse supply matrices. Enforcing strict First-Expired, First-Out (FEFO) inventory algorithms and unified fleet coordination protocols to eliminate spoilage and ensure secure B2B waybill fulfillment.
+                        Pure, therapeutic-grade essential oils distilled from Indonesia's finest botanicals. From soothing patchouli to invigorating vetiver, each bottle carries the essence of nature's most potent healing compounds.
                     </p>
                 </div>
                 
-                <!-- Downstream Division -->
+                <!-- The Holding Group Story -->
                 <div class="corp-division-card">
-                    <span class="corp-card-tag">Downstream Bio-Commerce</span>
-                    <h3 class="corp-card-title">Nusantara Omnichannel Retail</h3>
+                    <span class="corp-card-tag">The Holding Group</span>
+                    <h3 class="corp-card-title">One Ecosystem, Many Strengths</h3>
                     <p class="corp-card-desc">
-                        Bridging pure refined extracts to global consumer spaces. Running direct-to-consumer digital channels through premium lifestyle sub-brands, including high-end single-origin coffee networks and clinical botanical wellness portals.
+                        Behind every product is a fully integrated supply chain. We own and operate our own extraction facilities, logistics networks, and retail channels, ensuring every item meets our uncompromising standards before it reaches you.
                     </p>
                 </div>
             </div>
 
-            <!-- Section 2: Scale of Operations & Performance Ledgers -->
-            <div class="corp-bento-title-group" id="operational-scale">
-                <span class="corp-bento-tag">Operational Performance</span>
-                <h2 class="corp-bento-title">Conglomerate Scale Metrics</h2>
+            <!-- Section 2: Why Choose Nusantara -->
+            <div class="corp-bento-title-group" id="why-us">
+                <span class="corp-bento-tag">Our Promise</span>
+                <h2 class="corp-bento-title">Why Choose Nusantara</h2>
             </div>
             
             <div class="corp-stats-grid">
-                <!-- Stat 1 -->
-                <div class="corp-stat-card">
-                    <span class="corp-stat-num">98.4%</span>
-                    <span class="corp-stat-label">Distillation Purity</span>
-                    <p class="corp-stat-desc">Exceeding international pharmaceutical and food-grade active concentration benchmarks.</p>
-                </div>
-                
-                <!-- Stat 2 -->
                 <div class="corp-stat-card">
                     <span class="corp-stat-num">100%</span>
-                    <span class="corp-stat-label">Asset Traceability</span>
-                    <p class="corp-stat-desc">Complete digital tracing logs tracking botanical assets from remote field harvests to final packaging.</p>
+                    <span class="corp-stat-label">Pure & Natural</span>
+                    <p class="corp-stat-desc">No synthetic additives, no shortcuts. Every product is derived purely from natural Indonesian botanicals.</p>
                 </div>
                 
-                <!-- Stat 3 -->
+                <div class="corp-stat-card">
+                    <span class="corp-stat-num">12+</span>
+                    <span class="corp-stat-label">Farming Partners</span>
+                    <p class="corp-stat-desc">We work directly with regional farming cooperatives, ensuring fair trade and the freshest raw materials.</p>
+                </div>
+                
                 <div class="corp-stat-card">
                     <span class="corp-stat-num">Zero</span>
-                    <span class="corp-stat-label">Spoilage Waste</span>
-                    <p class="corp-stat-desc">Real-time FEFO allocation matrices securing logistics transit and preventing organic degradation.</p>
+                    <span class="corp-stat-label">Waste Commitment</span>
+                    <p class="corp-stat-desc">From harvest to delivery, our process is designed to minimize environmental impact at every stage.</p>
                 </div>
                 
-                <!-- Stat 4 -->
                 <div class="corp-stat-card">
-                    <span class="corp-stat-num">3-Tier</span>
-                    <span class="corp-stat-label">Ecosystem Sync</span>
-                    <p class="corp-stat-desc">Unified authentication and decoupled data pipelines connecting upstream, midstream, and retail.</p>
+                    <span class="corp-stat-num">Seed</span>
+                    <span class="corp-stat-label">To Shelf Traceability</span>
+                    <p class="corp-stat-desc">Every product can be traced back to the exact farm, harvest date, and processing batch it came from.</p>
                 </div>
             </div>
 
-            <!-- Section 3: Our Sustainable Governance Core -->
-            <div class="corp-bento-title-group" id="governance-core">
-                <span class="corp-bento-tag">Sustainability Core</span>
-                <h2 class="corp-bento-title">Agricultural & Governance Vision</h2>
+            <!-- Section 3: From Our Farms to Your Hands -->
+            <div class="corp-bento-title-group" id="our-story">
+                <span class="corp-bento-tag">Our Story</span>
+                <h2 class="corp-bento-title">From Indonesian Farms to Your Hands</h2>
             </div>
             
             <div class="corp-wide-card">
                 <div class="corp-wide-info">
-                    <h3 class="corp-wide-title">Sustainable Farm-to-Consumer Alliance</h3>
+                    <h3 class="corp-wide-title">Rooted in Nature, Refined with Care</h3>
                     <p class="corp-wide-desc">
-                        Nusantara Extract & Co. acts as the central holding identity orchestrating a secure commercial holding ecosystem. By combining advanced technical resource planning with direct partnerships with regional Indonesian farming cooperatives, we eliminate exploitative middle-market trading while maintaining complete chemical and volumetric tracing parity from soil to shelf.
+                        It begins with Indonesian soil. Our farmers cultivate vetiver, patchouli, and premium coffee cherries using time-honored techniques passed down through generations. We then carefully extract and refine these raw materials in our own facilities, preserving their purity and potency. The result? Products you can trust, with a story you can feel in every sip and every drop.
                     </p>
                 </div>
                 <div class="corp-wide-pillars">
                     <div class="corp-pillar-item">
-                        <span class="corp-pillar-title">Direct-Farmer Sourcing</span>
-                        <span class="corp-pillar-desc">Sourcing raw vetiver, patchouli, and coffee from 12+ regional agricultural cooperatives.</span>
+                        <span class="corp-pillar-title">Ethically Sourced</span>
+                        <span class="corp-pillar-desc">Direct partnerships with Indonesian farmers ensuring fair pricing and sustainable practices.</span>
                     </div>
                     <div class="corp-pillar-item">
-                        <span class="corp-pillar-title">Zero Carbon Sourcing</span>
-                        <span class="corp-pillar-desc">Reducing agricultural shrinkage and transport overhead using localized distribution hubs.</span>
+                        <span class="corp-pillar-title">Freshness Guaranteed</span>
+                        <span class="corp-pillar-desc">Smart inventory rotation ensures you always receive the freshest batch available.</span>
                     </div>
                     <div class="corp-pillar-item">
-                        <span class="corp-pillar-title">Green Distillation</span>
-                        <span class="corp-pillar-desc">Enforcing subcritical, non-toxic extraction mechanisms across processing lines.</span>
+                        <span class="corp-pillar-title">In-House Processing</span>
+                        <span class="corp-pillar-desc">We own our extraction and roasting facilities for complete quality control.</span>
                     </div>
                     <div class="corp-pillar-item">
-                        <span class="corp-pillar-title">Traceability Ledger</span>
-                        <span class="corp-pillar-desc">Real-time digital oversight ensuring 100% auditable supply chains.</span>
+                        <span class="corp-pillar-title">Direct to You</span>
+                        <span class="corp-pillar-desc">No middlemen, no markups. From our production line straight to your doorstep.</span>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
+
 
     <!-- Footer Section -->
     <footer>
