@@ -85,6 +85,24 @@
             </div>
         </div>
 
+        <!-- Second Floating Tagline Badge -->
+        <div class="floating-island-card float-delay-1" style="position: absolute; right: 28%; top: 58%; z-index: 5;">
+            <div class="floating-card-icon">🌱</div>
+            <div class="floating-card-body">
+                <div class="floating-card-title">Organic Traceability</div>
+                <div class="floating-card-status">100% Certified Source</div>
+            </div>
+        </div>
+
+        <!-- Third Floating Node Badge -->
+        <div class="floating-island-card float-delay-3" style="position: absolute; right: 8%; top: 76%; z-index: 5;">
+            <div class="floating-card-icon">📡</div>
+            <div class="floating-card-body">
+                <div class="floating-card-title">SSO Authority Node</div>
+                <div class="floating-card-status">Status: 100% Secured</div>
+            </div>
+        </div>
+
         <!-- Full-bleed background image & fog/mist overlays -->
         <div class="hero-background-image-container">
             <div class="hero-mist-overlay-left"></div>
@@ -96,11 +114,6 @@
     <!-- Refinement Ecosystem Features Section (Shifted Up to Overlap Hero) -->
     <section class="features" id="ecosystem">
         <div class="container">
-            <div style="display: flex; justify-content: center; margin-bottom: 3.5rem;">
-                <div class="floating-badge float-delay-3">
-                    <span>🛡️</span> Zero-Trust Single Sign-On Access Locked
-                </div>
-            </div>
             <div class="features-grid">
                 <!-- Card 1: Soft Blue Glass -->
                 <div class="feature-card feature-card-blue">
@@ -174,10 +187,6 @@
         </div>
         <div class="container footer-bottom">
             <span>&copy; 2026 Nusantara Extract & Co. All rights reserved.</span>
-            <div class="floating-badge floating-badge-green float-delay-1" style="animation-duration: 6s; font-size: 0.8rem; padding: 0.4rem 0.9rem; border-color: rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #ffffff;">
-                <span class="pulse-dot"></span>
-                AES-256 Standard Handshake Active
-            </div>
             <span>Security Authority Code: NES-2026-SSO</span>
         </div>
     </footer>
