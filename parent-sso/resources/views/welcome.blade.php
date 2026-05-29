@@ -141,7 +141,7 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <span>&copy; 2026 Nusantara Extract & Co. All rights reserved. English-only corporate build.</span>
+            <span>&copy; 2026 Nusantara Extract & Co. All rights reserved.</span>
             <span>Security Authority Code: NES-2026-SSO</span>
         </div>
     </footer>
