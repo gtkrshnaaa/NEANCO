@@ -77,6 +77,17 @@
             <div class="hero-mist-overlay-left"></div>
             <div class="hero-mist-overlay-bottom"></div>
             <img src="{{ asset('images/nusantara_hero_island.png') }}" alt="Nusantara Extraction Island" class="hero-bg-image">
+            <!-- Floating leaf wind particles -->
+            <div class="hero-leaves">
+                <span class="hero-leaf">🍃</span>
+                <span class="hero-leaf">🌿</span>
+                <span class="hero-leaf">🍃</span>
+                <span class="hero-leaf">🌱</span>
+                <span class="hero-leaf">🍃</span>
+                <span class="hero-leaf">🌿</span>
+                <span class="hero-leaf">🍃</span>
+                <span class="hero-leaf">🌿</span>
+            </div>
         </div>
     </section>
 
