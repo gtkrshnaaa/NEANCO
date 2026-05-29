@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
     /* Premium flat Matcha-latte organic color palette (No Gradients) */
@@ -157,20 +157,22 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* Ecosystem Hero Button - Sunlit Sage Green matching 'Our Approach' exactly */
+/* Ecosystem Hero Button - Massive Bolder Matcha CTA matching 'Our Approach' exactly */
 .btn-ecosystem {
     background-color: #ceddb0; /* Flat Soft Matcha */
     color: var(--color-primary);
-    padding: 0.9rem 2.4rem;
-    font-size: 1.05rem;
+    padding: 1.15rem 2.8rem; /* Upgraded padding for massive presence */
+    font-size: 1.25rem; /* Upgraded font size */
     border-radius: 2rem;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 700; /* Extra bold */
     border: none;
+    box-shadow: 0 4px 14px rgba(45, 90, 39, 0.08);
 }
 
 .btn-ecosystem:hover {
     background-color: #b5c796;
+    box-shadow: 0 6px 20px rgba(45, 90, 39, 0.15);
     transform: translateY(-2px);
 }
 
@@ -186,7 +188,7 @@ nav ul li a:hover {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.2fr 0.8fr; /* Adjusted column ratio to support massive text */
     gap: 4rem;
     align-items: center;
 }
@@ -199,28 +201,29 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-/* Perfect Tagline Typography matching mockup exactly */
+/* Giant, Ultra-Bold Brutalist Tagline matching mockup exactly */
 .hero-tagline {
     font-family: var(--font-heading);
-    font-size: 5.25rem; /* Perfect matching proportional scale */
-    font-weight: 800;
-    line-height: 1.0; /* Super tight line height exactly like mockup */
-    color: var(--color-primary); /* Uniform solid dark forest leaf green */
-    margin-bottom: 2rem;
-    letter-spacing: -0.04em; /* Premium geometric tight kerning */
+    font-size: clamp(4.8rem, 8.5vw, 6.8rem); /* Massive giant sizing */
+    font-weight: 900; /* Ultra-bold / Black weight for maximum impact */
+    line-height: 0.92; /* Super tight brutalist line height */
+    color: var(--color-primary); /* Uniform solid deep matcha green */
+    margin-bottom: 2.2rem;
+    letter-spacing: -0.045em; /* Extremely tight kerning */
 }
 
 .hero-tagline span {
-    color: var(--color-primary); /* Keeps tagline solid dark green */
+    color: var(--color-primary);
 }
 
+/* Enlarged Description Sizing */
 .hero-description {
-    font-size: 1.15rem; /* Perfect matched size */
-    color: var(--color-gray); /* Olive leaf gray */
-    margin-bottom: 2.75rem;
+    font-size: 1.45rem; /* Giant highly readable paragraph font size */
+    color: var(--color-gray);
+    margin-bottom: 3.2rem;
     font-weight: 500;
-    max-width: 85%;
-    line-height: 1.6;
+    max-width: 90%;
+    line-height: 1.55;
 }
 
 .hero-ctas {
