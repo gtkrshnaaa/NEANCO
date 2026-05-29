@@ -241,14 +241,12 @@ nav ul li a:hover {
     pointer-events: none;
 }
 
-/* Zoomed In image with smooth transformation origin */
+/* Reverted to standard, non-zoomed display */
 .hero-bg-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left center;
-    transform: scale(1.35); /* Zoomed in exactly like mockup */
-    transform-origin: center right;
 }
 
 /* 
