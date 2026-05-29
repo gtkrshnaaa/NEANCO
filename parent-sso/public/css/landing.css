@@ -510,6 +510,126 @@ footer {
     font-size: 0.85rem;
 }
 
+/* Premium Floating Widgets & Micro-Animations Style */
+.floating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(45, 90, 39, 0.12);
+    padding: 0.5rem 1.15rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(45, 90, 39, 0.05);
+    pointer-events: auto;
+    width: fit-content;
+    animation: floatBadge 4.5s ease-in-out infinite;
+    transition: var(--transition-smooth);
+}
+
+.floating-badge-green {
+    background: var(--color-secondary);
+    border-color: rgba(45, 90, 39, 0.08);
+    color: var(--color-primary);
+}
+
+/* Pulse Glow Indicator */
+.pulse-dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(110, 191, 103, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(110, 191, 103, 0);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(110, 191, 103, 0);
+    }
+}
+
+/* Absolutely positioned floating bio-lab widget */
+.floating-island-card {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 0.8rem 1.35rem;
+    border-radius: 1.35rem;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.04);
+    animation: floatBadge 5.5s ease-in-out infinite;
+    transition: var(--transition-smooth);
+    pointer-events: auto;
+}
+
+.floating-island-card:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+.floating-card-icon {
+    font-size: 1.45rem;
+}
+
+.floating-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.floating-card-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.floating-card-status {
+    font-size: 0.76rem;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+
+/* Animation Delays for organic offset */
+.float-delay-1 {
+    animation-delay: 0s;
+}
+
+.float-delay-2 {
+    animation-delay: 1.5s;
+}
+
+.float-delay-3 {
+    animation-delay: 3s;
+}
+
+@keyframes floatBadge {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .hero {
@@ -541,6 +661,10 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
+    }
+    
+    .floating-island-card {
+        display: none; /* Hide floating island card on tablet to conserve screen width */
     }
 }
 
